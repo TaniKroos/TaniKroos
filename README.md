@@ -1,4 +1,4 @@
-# 💫 About Me:
+
 👋 About Me<br>Hi, I'm Tanish Saini, a final-year Electronics and Communication Engineering student at BPIT. I'm passionate about DevOps, backend development, and cloud platforms. With experience in Kubernetes, CI/CD pipelines, Node.js, and AWS, I enjoy automating workflows and building scalable systems.
 - 📫 How to reach me **tanishsaini26@gmail.com**
 <h3 align="left">Connect with me:</h3>
