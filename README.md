@@ -1,7 +1,6 @@
-
 # **TANISH SAINI**
 
-### Backend Software Engineer | Cloud-Native Systems & GenAI | .NET 8 | Azure
+### Backend Software Engineer | Cloud-Native Systems & GenAI | C#, Python| Azure
 
 ---
 
@@ -19,19 +18,13 @@
 
 ## 👋 **Professional Summary**
 
-Backend Software Engineer focused on building **scalable GenAI systems** on Azure. Passionate about **distributed architecture**, **RAG pipelines**, and **cloud-native services**. Experience working on intelligent automation platforms and exploring new approaches to solve complex technical challenges at scale.
-
-Passionate about **DevOps**, **backend development**, and **cloud platforms**. With experience in **Kubernetes**, **CI/CD pipelines**, **Node.js**, and **AWS**, I enjoy automating workflows and building scalable systems.
+Backend Software Engineer focused on building **scalable GenAI systems** and **distributed, cloud-native architecture** on **Azure**. Experience spans **RAG pipelines**, semantic search over large vector datastores, and — most recently — building **Steve**, an autonomous AI coding agent that runs in isolated cloud sandboxes and ships real pull requests end-to-end. Comfortable owning a system from **backend design** through **CI/CD** and deployment, with a focus on making distributed systems resilient to real-world failure (crash recovery, horizontal scaling) rather than just happy-path correct.
 
 ---
 
 ## 💼 **Professional Experience**
 
 ### **Associate Programmer** | **Xceedance**
-
-#### **AI-Powered Log Summarization Platform**
-- Architected and shipped reusable **.NET 8** library aggregating distributed logs from 10+ GenAI applications; **reduced log analysis time by 75%** through intelligent summarization powered by **Azure OpenAI** and correlation ID tracking across **Blob Storage** and **Application Insights**.
-- Engineered end-to-end observability pipeline processing **50K+ log entries daily** with **sub-50ms latency**; enabled on-demand analytics for **3+ internal teams** improving **MTTR by 60%**.
 
 #### **Intelligent Test Generation & Automation Platform**
 - Designed and deployed end-to-end backend architecture for AI-driven test case generation; parsed user stories at scale, **generated 500+ test cases** per project, **achieving 87% pass-rate accuracy** on first execution.
@@ -42,6 +35,18 @@ Passionate about **DevOps**, **backend development**, and **cloud platforms**. W
 - Built full-stack platform (**Angular** frontend + **.NET 8** backend) enabling users to specify architecture requirements in natural language; system leverages **Azure OpenAI** to generate comprehensive technical design documents with **HLD diagrams** (Architecture, Sequence, Component).
 - Implemented multi-stage backend pipeline: requirements parsing via **Azure OpenAI**, context enrichment through **vector search** over **1000+ architectural patterns** in **Cosmos DB**, and complete document generation with embedded **Mermaid** specifications—processed end-to-end and returned as complete deliverables.
 - Designed resilient architecture leveraging **Azure Functions** for document generation, **Azure Blob Storage** for persisting documents, **Azure Table Storage** for request tracking and metadata, and **Cosmos DB** for pattern repository; enabled on-demand architecture documentation for cross-functional teams.
+
+---
+
+## 🚀 **Projects**
+
+### **Steve** — Cloud-Native Autonomous AI Coding Agent
+🔗 **GitHub:** [Steve](https://github.com/TaniKroos) | 🌐 **Live Demo:** Coming soon
+
+- Architected a full-stack platform (**Python**, **FastAPI**, **React**, **TypeScript**) where an AI agent autonomously edits code inside an isolated **E2B** sandbox and opens a real GitHub pull request — end-to-end, no manual steps.
+- Designed a **multi-provider LLM abstraction** (Anthropic Claude, Azure OpenAI, OpenAI-compatible hosts) behind one interface, enabling provider swaps with zero changes to the agent's 15+ tool-calling loop.
+- Built a **distributed, crash-recoverable session-ownership system** (Redis-backed instance registry, sticky routing) enabling the agent service to run as multiple horizontally-scaled instances with no session lost to a crash.
+- Real-time streaming via **Redis pub/sub** + **Server-Sent Events**, delivering live agent output and tool-call status to the browser.
 
 ---
 
@@ -83,5 +88,3 @@ Passionate about **DevOps**, **backend development**, and **cloud platforms**. W
 
 ---
 [![](https://visitcount.itsvg.in/api?id=TaniKroos&icon=0&color=0)](https://visitcount.itsvg.in)
-
- 
