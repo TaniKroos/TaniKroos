@@ -41,7 +41,7 @@ Backend Software Engineer focused on building **scalable GenAI systems** and **d
 ## 🚀 **Projects**
 
 ### **Steve** — Cloud-Native Autonomous AI Coding Agent
-🔗 **GitHub:** [Steve](https://github.com/TaniKroos) | 🌐 **Live Demo:** Coming soon
+🔗 **GitHub:** [Steve](https://github.com/TaniKroos) | 🌐 **Live Demo:** [Steve](https://www.smudgee.xyz/)
 
 - Architected a full-stack platform (**Python**, **FastAPI**, **React**, **TypeScript**) where an AI agent autonomously edits code inside an isolated **E2B** sandbox and opens a real GitHub pull request — end-to-end, no manual steps.
 - Designed a **multi-provider LLM abstraction** (Anthropic Claude, Azure OpenAI, OpenAI-compatible hosts) behind one interface, enabling provider swaps with zero changes to the agent's 15+ tool-calling loop.
