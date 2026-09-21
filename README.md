@@ -9,7 +9,6 @@
 📍 **Location:** New Delhi, India  
 📱 **Phone:** +91-8447951790  
 📧 **Email:** tanishsaini26@gmail.com  
-🔗 **GitHub:** [TaniKroos](https://github.com/TaniKroos)  
 🔗 **LinkedIn:** [Tanish Saini](https://www.linkedin.com/in/tanish-saini-90410822a/)  
 🐦 **Twitter:** [@tanish2731](https://twitter.com/tanish2731)  
 💻 **LeetCode:** [tanikroos](https://www.leetcode.com/tanikroos)  
@@ -22,26 +21,40 @@ Backend Software Engineer focused on building **scalable GenAI systems** and **d
 
 ---
 
-## 💼 **Professional Experience**
+## 💼 Professional Experience
 
-### **Associate Programmer** | **Xceedance**
+### Associate Programmer | Xceedance
+*Jan 2025 – Present*
 
-#### **Intelligent Test Generation & Automation Platform**
-- Designed and deployed end-to-end backend architecture for AI-driven test case generation; parsed user stories at scale, **generated 500+ test cases** per project, **achieving 87% pass-rate accuracy** on first execution.
-- Built semantic search engine over **100K+ historical test cases** using **Azure Cosmos DB** **vector embeddings** and **RAG**; **improved test case quality by 70%** through intelligent prompt enrichment, **reducing manual test authoring time by 80%**.
-- Extended platform to auto-generate complete **UI test automation frameworks** in multiple formats (**Selenium**, **Playwright**, **Cypress**); engineers could select target framework and receive production-ready test scripts with **page object models** and **assertion libraries**.
+#### AI Skills MCP Framework
+*.NET 8 · C# · Azure Functions · Azure OpenAI · Azure AD*
+- Proposed and prototyped a lightweight, Markdown-based **MCP** server for sharing reusable AI skills across teams; it became the platform the team shipped, now serving **100+ skills** to **800+ engineers**.
+- Secured it with **Azure AD (Entra ID)** using **OAuth 2.0 / OIDC**: app registrations, JWT bearer validation, and scope and app-role claims mapped to per-resource authorization across **10+ client applications**.
+- Own it in production: releases, breaking-change upgrades, and first-line support for the engineers using it.
 
-#### **AI-Powered Architecture Design Platform**
-- Built full-stack platform (**Angular** frontend + **.NET 8** backend) enabling users to specify architecture requirements in natural language; system leverages **Azure OpenAI** to generate comprehensive technical design documents with **HLD diagrams** (Architecture, Sequence, Component).
-- Implemented multi-stage backend pipeline: requirements parsing via **Azure OpenAI**, context enrichment through **vector search** over **1000+ architectural patterns** in **Cosmos DB**, and complete document generation with embedded **Mermaid** specifications—processed end-to-end and returned as complete deliverables.
-- Designed resilient architecture leveraging **Azure Functions** for document generation, **Azure Blob Storage** for persisting documents, **Azure Table Storage** for request tracking and metadata, and **Cosmos DB** for pattern repository; enabled on-demand architecture documentation for cross-functional teams.
+#### Intelligent Test Generation & Automation Platform
+*.NET 8 · Azure OpenAI · Cosmos DB · Azure DevOps · E2B*
+- Designed and shipped the backend for AI-driven test generation: an LLM turns user stories into test cases, producing **500+ cases per project** with **87%** needing no manual edit.
+- Built retrieval over **100K+ historical test cases** using **Cosmos DB** vector embeddings, passing the most relevant past cases to the LLM as context (**RAG**) and cutting manual authoring time by **80%**; integrated into existing **Azure DevOps** workflows.
+- Extended the platform with an **agentic loop** that turns test cases into complete UI automation frameworks in **Selenium**, **Playwright** or **Cypress**, writing, running and fixing code in an isolated **E2B sandbox** until the framework works. Generated frameworks follow the page object model with assertions in place; the platform is now used by **20+ QA teams** and **100+ QA engineers**.
 
+#### AI Log Summarization & Evaluation Platform
+*.NET 8 · C# · Azure OpenAI · Cosmos DB*
+- Engineered a serverless service processing **50,000+ log entries daily** at **sub-50ms latency**, with RAG-based summarization over production logs.
+- Built a structured logging library and summarization pipeline instrumenting **15 production workflows**, which became the team's shared method for evaluating model accuracy and driving later accuracy improvements.
+
+#### Production Reliability
+- Diagnosed a full outage of a serverless application after a deployment, with no logs to go on: every request was failing during dependency resolution, before our logging started. Traced it to an environment variable missing from the deployment, then helped implement a **global exception handler** so startup and dependency failures are logged instead of failing silently.
+
+#### Collaboration & Delivery
+- Gathered requirements directly from multiple QA and product teams, then designed a single platform serving all of them rather than one tool per team; present working demos to internal and prospective client stakeholders.
+- Deliver iteratively in an **Agile/Scrum** team: sprint planning, user stories, regular code reviews, and cross-functional work with product and QA.
 ---
 
 ## 🚀 **Projects**
 
 ### **Steve** — Cloud-Native Autonomous AI Coding Agent
-🔗 **GitHub:** [Steve](https://github.com/TaniKroos) | 🌐 **Live Demo:** [Steve](https://www.smudgee.xyz/)
+🌐 **Live Demo:** [Steve](https://www.smudgee.xyz/)
 
 - Architected a full-stack platform (**Python**, **FastAPI**, **React**, **TypeScript**) where an AI agent autonomously edits code inside an isolated **E2B** sandbox and opens a real GitHub pull request — end-to-end, no manual steps.
 - Designed a **multi-provider LLM abstraction** (Anthropic Claude, Azure OpenAI, OpenAI-compatible hosts) behind one interface, enabling provider swaps with zero changes to the agent's 15+ tool-calling loop.
